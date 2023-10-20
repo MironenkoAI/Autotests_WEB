@@ -1,9 +1,10 @@
 url_login: "https://test-stand.gb.ru/gateway/login"
 url_post: "https://test-stand.gb.ru/api/posts"
-username: "GB202307c17509"
-password: "89578a2581"
-# username: "dasha87"
-# password: "354282beb8"
+
+# username: "GB202307c17509"
+# password: "89578a2581"
+username: "dasha87"
+password: "354282beb8"
 
 title: "ДОДО КОМБО"
 description: "выгоднее на 22%"

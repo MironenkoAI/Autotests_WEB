@@ -1,0 +1,10 @@
+url: https://test-stand.gb.ru/gateway/login
+address: https://test-stand.gb.ru/api/posts
+address_post: https://test-stand.gb.ru/gateway/posts
+
+login: "dasha87"
+pswd: "354282beb8"
+
+title: "ДОДО КОМБО"
+description: "выгоднее на 22%"
+content: "Выбирайте из раздела Комбо и экономьте до 22%."

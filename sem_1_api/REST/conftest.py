@@ -20,12 +20,12 @@ def get_post(token):
                              params={"owner": "notMe"})
     return responce.json()
 
-@pytest.fixture()
-def creat_post():
-    res = requests.Session().post(url=data['url_post'], 
-                                  headers={'X-Auth-Token': token},
-                                  params={'title': data['title'], 
-                                          'description': data['description'], 
-                                          'content': data['content']})
-    if res.status_code == 200:
-        return "Пост успешно создан"
+# @pytest.fixture()
+# def creat_post():
+#     res = requests.Session().post(url=data['url_post'], 
+#                                   headers={'X-Auth-Token': token},
+#                                   params={'title': data['title'], 
+#                                           'description': data['description'], 
+#                                           'content': data['content']})
+#     if res.status_code == 200:
+#         return "Пост успешно создан"

@@ -1,4 +1,3 @@
-"token - a69630e0b98652da99efa4d995e7b2f6"
 import requests
 import yaml
 
@@ -22,14 +21,14 @@ def get_post(token):
     return responce.json()
 
 
-def creat_post():
-    res = requests.Session().post(url=data['url_post'], 
-                                  headers={'X-Auth-Token': token},
-                                  data={'title': data['title'], 
-                                          'description': data['description'], 
-                                          'content': data['content']})
-    if res.status_code == 200:
-        return "Пост успешно создан"
+# def creat_post():
+#     res = requests.Session().post(url=data['url_post'], 
+#                                   headers={'X-Auth-Token': token},
+#                                   data={'title': data['title'], 
+#                                           'description': data['description'], 
+#                                           'content': data['content']})
+#     if res.status_code == 200:
+#         return "Пост успешно создан"
     
 
 if __name__ == "__main__":
