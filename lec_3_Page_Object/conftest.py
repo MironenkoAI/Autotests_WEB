@@ -9,7 +9,7 @@ with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
     browser = testdata["browser"]
 
-@pytest.fixture(score="session")
+@pytest.fixture(scope="session")
 def browser():
     if browser == "firefox":
         service = Service(executable_path=GeckoDriverManager().install())
