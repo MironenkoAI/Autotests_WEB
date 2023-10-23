@@ -1,0 +1,9 @@
+2023-10-23 23:34:08 INFO ====== WebDriver manager ======
+2023-10-23 23:34:10 INFO Get LATEST chromedriver version for google-chrome
+2023-10-23 23:34:10 INFO Get LATEST chromedriver version for google-chrome
+2023-10-23 23:34:10 INFO Driver [C:\Users\Анастасия\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+2023-10-23 23:34:12 INFO Test1 Starting
+2023-10-23 23:34:13 INFO Send test to element // *[ @ id = "login"] / div[1] / label / input
+2023-10-23 23:34:13 INFO Send test to element // *[ @ id = "login"] / div[2] / label / input
+2023-10-23 23:34:14 INFO Click login button
+2023-10-23 23:34:15 INFO We find text 401 in error field //*[@id="app"]/main/div/div/div[2]/h2

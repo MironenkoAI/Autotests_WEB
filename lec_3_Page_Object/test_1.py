@@ -1,6 +1,8 @@
 from testpage import OperationsHelper
+import logging
 
 def test_step1(browser):
+    logging.info("Test1 Starting")
     testpage = OperationsHelper(browser)
     testpage.go_to_site()
     testpage.enter_login("test")
