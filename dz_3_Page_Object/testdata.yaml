@@ -1,0 +1,12 @@
+address: https://test-stand.gb.ru/login
+browser: chrome
+sleep_time: 5
+
+# username: "GB202307c17509"
+# password: "89578a2581"
+login: "dasha87"
+passwd: "354282beb8"
+
+name: "Дарья Зверева"
+email: "nastya_911@mail.ru"
+content: "Добрый день! Рада знакомству! У меня есть пара вопросов"
