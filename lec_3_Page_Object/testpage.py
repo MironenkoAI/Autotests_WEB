@@ -7,6 +7,7 @@ class TestSearchLocators:
     LOCATOR_PASS_FIELD = (By.XPATH, """// *[ @ id = "login"] / div[2] / label / input""")
     LOCATOR_LOGIN_BTN = (By.CSS_SELECTOR, """button""")
     LOCATOR_ERROR_FIELD = (By.XPATH, """//*[@id="app"]/main/div/div/div[2]/h2""")
+    LOCATOR_TEXT_FIELD = (By.XPATH, """//*[@id="app"]/main/nav/ul/li[3]/a""")
 
 class OperationsHelper(BasePage):
     def enter_login(self, word):
@@ -29,4 +30,10 @@ class OperationsHelper(BasePage):
         error_field = self.find_element(TestSearchLocators.LOCATOR_ERROR_FIELD, time=3)
         text = error_field.text
         logging.info(f"We find text {text} in error field {TestSearchLocators.LOCATOR_ERROR_FIELD[1]}")
+        return text
+    
+    def get_text(self):
+        text_field = self.find_element(TestSearchLocators.LOCATOR_TEXT_FIELD, time=3)
+        text = text_field.text
+        logging.info(f"We find text {text} in text field {TestSearchLocators.LOCATOR_TEXT_FIELD[1]}")
         return text
