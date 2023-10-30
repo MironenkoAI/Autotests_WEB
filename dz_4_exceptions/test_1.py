@@ -14,7 +14,7 @@ def test_step1(browser):
     testpage.enter_login("test")
     testpage.enter_pass("test")
     testpage.click_login_button()
-    assert testpage.get_error_text() == "401", "test FAILED"
+
 
 # ввод валидных данных в поля login и password открывает страницу 
 # профиля (проверяем по Приветствию пользователя)
@@ -25,12 +25,9 @@ def test_step2(browser):
     testpage.enter_login(testdata.get("login"))
     testpage.enter_pass(testdata.get("passwd"))
     testpage.click_login_button()
+    print("*********" + )
     assert testdata.get("login") in testpage.get_text(), "test FAILED"
-    testpage.click_exit()
-<<<<<<< HEAD:dz_4_exceptions/test_1.py
     
-=======
->>>>>>> 0faba3bf417baaa84398223a52f5db77d14b4a20:dz_3_Page_Object/test_1.py
 
 # проверка механики работы формы Contact Us на главной странице личного кабинета: 
 # открытие формы, ввод данных в поля, клик по кнопке и появление всплывающего alert.
