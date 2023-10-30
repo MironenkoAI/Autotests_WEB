@@ -1,21 +1,15 @@
-2023-10-25 00:01:25 INFO ====== WebDriver manager ======
-2023-10-25 00:01:26 INFO Get LATEST chromedriver version for google-chrome
-2023-10-25 00:01:27 INFO Get LATEST chromedriver version for google-chrome
-2023-10-25 00:01:27 INFO Get LATEST chromedriver version for google-chrome
-2023-10-25 00:01:27 INFO WebDriver version 118.0.5993.70 selected
-2023-10-25 00:01:27 INFO Modern chrome version https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/win32/chromedriver-win32.zip
-2023-10-25 00:01:27 INFO About to download new driver from https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/win32/chromedriver-win32.zip
-2023-10-25 00:01:28 INFO Driver downloading response is 200
-2023-10-25 00:01:29 INFO Get LATEST chromedriver version for google-chrome
-2023-10-25 00:01:29 INFO Driver has been saved in cache [C:\Users\Анастасия\.wdm\drivers\chromedriver\win64\118.0.5993.70]
-2023-10-25 00:01:31 INFO Test3 Starting
-2023-10-25 00:01:33 INFO Send dasha87 to element // *[ @ id = "login"] / div[1] / label / input
-2023-10-25 00:01:33 INFO Send 354282beb8 to element // *[ @ id = "login"] / div[2] / label / input
-2023-10-25 00:01:33 INFO Click login button
-2023-10-25 00:01:33 INFO Click contact button
-2023-10-25 00:01:35 INFO Send Дарья Зверева to element //*[@id="contact"]/div[1]/label/input
-2023-10-25 00:01:36 INFO Send nastya_911@mail.ru to element //*[@id="contact"]/div[2]/label/input
-2023-10-25 00:01:36 INFO Send Добрый день! Рада знакомству! У меня есть пара вопросов to element //*[@id="contact"]/div[3]/label/span/textarea
-2023-10-25 00:01:36 INFO Click Contact us button
-2023-10-25 00:01:37 INFO Get alert message
-2023-10-25 00:01:37 INFO Alert message is Form successfully submitted
+2023-10-30 19:48:20 INFO ====== WebDriver manager ======
+2023-10-30 19:48:22 INFO Get LATEST chromedriver version for google-chrome
+2023-10-30 19:48:22 INFO Get LATEST chromedriver version for google-chrome
+2023-10-30 19:48:22 INFO Driver [C:\Users\Анастасия\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+2023-10-30 19:48:24 INFO Test3 Starting
+2023-10-30 19:48:25 INFO Send dasha87 to element // *[ @ id = "login"] / div[1] / label / input
+2023-10-30 19:48:25 INFO Send 354282beb8 to element // *[ @ id = "login"] / div[2] / label / input
+2023-10-30 19:48:26 INFO Click login button
+2023-10-30 19:48:26 INFO Click contact button
+2023-10-30 19:48:27 INFO Send Дарья Зверева to element //*[@id="contact"]/div[1]/label/input
+2023-10-30 19:48:28 INFO Send nastya_911@mail.ru to element //*[@id="contact"]/div[2]/label/input
+2023-10-30 19:48:28 INFO Send Добрый день! Рада знакомству! У меня есть пара вопросов to element //*[@id="contact"]/div[3]/label/span/textarea
+2023-10-30 19:48:29 INFO Click Contact us button
+2023-10-30 19:48:30 INFO Get alert message
+2023-10-30 19:48:30 INFO Alert message is Form successfully submitted

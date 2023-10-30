@@ -2,6 +2,7 @@ from testpage import OperationsHelper
 import logging
 import yaml
 
+
 with open("testdata.yaml", encoding='utf-8') as f:
     testdata = yaml.safe_load(f)
 
