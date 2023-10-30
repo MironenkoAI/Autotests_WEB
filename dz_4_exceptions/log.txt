@@ -1,0 +1,26 @@
+2023-10-31 01:32:46 INFO ====== WebDriver manager ======
+2023-10-31 01:32:48 INFO Get LATEST chromedriver version for google-chrome
+2023-10-31 01:32:48 INFO Get LATEST chromedriver version for google-chrome
+2023-10-31 01:32:49 INFO Driver [C:\Users\Анастасия\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+2023-10-31 01:32:50 INFO Test1 Starting
+2023-10-31 01:32:52 INFO Send test to element ('xpath', '//*[@id="login"]/div[1]/label/input')
+2023-10-31 01:32:52 INFO Send test to element ('xpath', '//*[@id="login"]/div[2]/label/input')
+2023-10-31 01:32:52 INFO Click login button
+2023-10-31 01:32:53 INFO We find text 401 in error field ('xpath', '//*[@id="app"]/main/div/div/div[2]/h2')
+2023-10-31 01:32:53 INFO Test2 Starting
+2023-10-31 01:32:53 INFO Send dasha87 to element ('xpath', '//*[@id="login"]/div[1]/label/input')
+2023-10-31 01:32:53 INFO Send 354282beb8 to element ('xpath', '//*[@id="login"]/div[2]/label/input')
+2023-10-31 01:32:54 INFO Click login button
+2023-10-31 01:32:55 INFO We find text Hello, dasha87 in text field ('xpath', '//*[@id="app"]/main/nav/ul/li[3]/a')
+2023-10-31 01:32:55 INFO Click exit button
+2023-10-31 01:32:56 INFO Test3 Starting
+2023-10-31 01:32:56 INFO Send dasha87 to element ('xpath', '//*[@id="login"]/div[1]/label/input')
+2023-10-31 01:32:56 INFO Send 354282beb8 to element ('xpath', '//*[@id="login"]/div[2]/label/input')
+2023-10-31 01:32:56 INFO Click login button
+2023-10-31 01:32:56 INFO Click contact button
+2023-10-31 01:32:57 INFO Send Дарья Зверева to element ('xpath', '//*[@id="contact"]/div[1]/label/input')
+2023-10-31 01:32:58 INFO Send nastya_911@mail.ru to element ('xpath', '//*[@id="contact"]/div[2]/label/input')
+2023-10-31 01:32:58 INFO Send Добрый день! Рада знакомству! У меня есть пара вопросов to element ('xpath', '//*[@id="contact"]/div[3]/label/span/textarea')
+2023-10-31 01:32:59 INFO Click Contact us button
+2023-10-31 01:33:00 INFO Get alert message
+2023-10-31 01:33:00 INFO Alert message is Form successfully submitted
