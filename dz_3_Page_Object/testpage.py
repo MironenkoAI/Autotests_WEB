@@ -32,17 +32,22 @@ class OperationsHelper(BasePage):
     def click_login_button(self):
         logging.info("Click login button")
         self.find_element(TestSearchLocators.LOCATOR_LOGIN_BTN).click()
+
+    def click_exit(self):
+        logging.info("Click exit button")
+        self.find_element(TestSearchLocators.ids['LOCATOR_TEXT_FIELD']).click()
+        self.find_element(TestSearchLocators.ids['LOCATOR_LOGOUT_BTN']).click()
         
     def get_error_text(self):
-        logging.info(f"We find text {text} in error field {TestSearchLocators.LOCATOR_ERROR_FIELD[1]}")
         error_field = self.find_element(TestSearchLocators.LOCATOR_ERROR_FIELD, time=3)
         text = error_field.text
+        logging.info(f"We find text {text} in error field {TestSearchLocators.LOCATOR_ERROR_FIELD[1]}")
         return text
     
     def get_text(self):
-        logging.info(f"We find text {text} in text field {TestSearchLocators.LOCATOR_TEXT_FIELD[1]}")
         text_field = self.find_element(TestSearchLocators.LOCATOR_TEXT_FIELD, time=3)
-        text = text_field.text        
+        text = text_field.text
+        logging.info(f"We find text {text} in text field {TestSearchLocators.LOCATOR_TEXT_FIELD[1]}")
         return text
     
     def click_contact_button(self):
