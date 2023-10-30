@@ -27,7 +27,10 @@ def test_step2(browser):
     testpage.click_login_button()
     assert testdata.get("login") in testpage.get_text(), "test FAILED"
     testpage.click_exit()
+<<<<<<< HEAD:dz_4_exceptions/test_1.py
     
+=======
+>>>>>>> 0faba3bf417baaa84398223a52f5db77d14b4a20:dz_3_Page_Object/test_1.py
 
 # проверка механики работы формы Contact Us на главной странице личного кабинета: 
 # открытие формы, ввод данных в поля, клик по кнопке и появление всплывающего alert.
