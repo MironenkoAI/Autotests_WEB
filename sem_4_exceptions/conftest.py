@@ -1,7 +1,5 @@
-import pytest
 import yaml
-import requests
-import logging
+import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -13,12 +11,11 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
 with open("testdata.yaml", encoding='utf-8') as f:
-    data = yaml.safe_load(f)
+    testdata = yaml.safe_load(f)
     
-
 @pytest.fixture(scope="session")
 def browser():
-    browser = data["browser"]
+    browser = testdata["browser"]
     if browser == "firefox":
         service = Service(executable_path=GeckoDriverManager().install())
         options = webdriver.FirefoxOptions()
@@ -29,19 +26,6 @@ def browser():
         driver = webdriver.Chrome(service=service, options=options)
     yield driver
     driver.quit()
-
-
-@pytest.fixture()
-def user_login():
-    try:
-        result = requests.Session().post(url=data['url'], data={'username': data['login'], 'password': data['pswd']})
-        response_json = result.json()
-        token = response_json.get('token')
-    except:
-        logging.exception("Get token exception")
-        token = None
-    logging.debug(f"Return token success")
-    return token
 
 @pytest.fixture(scope="module", autouse=True)
 def send_email():
@@ -68,4 +52,4 @@ def send_email():
     server.login(fromaddr, mypass)
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
-    server.quit()
+    server.quit() 

@@ -1,15 +1,25 @@
-address: https://test-stand.gb.ru/login
-browser: chrome
-sleep_time: 5
+address: https://test-stand.gb.ru
+browser: Chrome
+sleep_time: 1
 
-# username: "GB202307c17509"
-# password: "89578a2581"
 login: "dasha87"
-passwd: "354282beb8"
+pswd: "354282beb8"
 
-name: "Дарья Зверева"
-email: "nastya_911@mail.ru"
-content: "Добрый день! Рада знакомству! У меня есть пара вопросов"
+u_name: "Дарья Зверева"
+u_email: "nastya_911@mail.ru"
+content_contact: "One of them has interesting and useful things to say, but can not get their point across. In that case, you need an interpreter."
+
+title: "Работа в Додо!"
+description: "Работа, где важен каждый"
+content: "Людям нравится работать, когда они чувствуют свою ценность. 
+В большой компании человек может теряться, чувствовать себя менее значимым.
+Мы в Додо уверены: чем больше компания, тем больше внимания должно быть к 
+тем, кто с ней работает."
+
+url: https://test-stand.gb.ru/gateway/login
+api_address: https://test-stand.gb.ru/api/posts
+address_post: https://test-stand.gb.ru/gateway/posts
+not_me_title: qwerty
 
 fromaddr: "nastya_911@mail.ru"
 toaddr: "nastya_911@mail.ru"
