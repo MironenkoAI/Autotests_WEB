@@ -46,10 +46,10 @@ def user_login():
 @pytest.fixture(scope="module", autouse=True)
 def send_email():
     yield
-    fromaddr = testdata.get("fromaddr")
-    toaddr = testdata.get("toaddr")
-    mypass = testdata.get("fromaddr_passwd")
-    file = testdata.get("file")
+    fromaddr = data.get("fromaddr")
+    toaddr = data.get("toaddr")
+    mypass = data.get("fromaddr_passwd")
+    file = data.get("file")
 
     msg = MIMEMultipart()
     msg['From'] = fromaddr
@@ -61,7 +61,7 @@ def send_email():
         part['Content-Disposition'] = 'attachment; filename="%s"' % basename(file)
         msg.attach(part)
 
-    letter = testdata.get("letter_body")
+    letter = data.get("letter_body")
 
     msg.attach(MIMEText(letter, "plain"))
     server = smtplib.SMTP_SSL("smtp.mail.ru", 465)
